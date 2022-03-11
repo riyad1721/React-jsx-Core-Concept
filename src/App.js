@@ -10,6 +10,13 @@ function App() {
   // const commonColor = {
   //   color: 'black'
   // }
+  const introductions = [
+    { name: "Md Reyad Hossain", Profession: "Learning React js" },
+    { name: "Md Mazharul Islam", Profession: "Production Engineer" },
+    { name: "Md Asif Iqbal Shuvo", Profession: "BCS Cader" },
+    { name: "Rubayet Ahmed Rafsun", Profession: "Play Boy" },
+    { name: "Roqunozzaman Emon", Profession: "Every Girls Best Friends" },
+  ]
   return (
     <div className="App">
       {/* { <header className="App-header">
@@ -34,11 +41,15 @@ function App() {
           Learn React
         </a>
       </header> } */}
-      <Person name="Md Reyad Hossain" Profession="Learning React js"></Person>
+      {/* <Person name="Md Reyad Hossain" Profession="Learning React js"></Person>
       <Person name="Md Mazharul Islam" Profession="Production Engineer"></Person>
       <Person name="Md Asif Iqbal Shuvo" Profession="BCS Cader"></Person>
       <Person name="Rubayet Ahmed Rafsun" Profession="Play Boy"></Person>
-      <Person name="Roqunozzaman Emon" Profession="Every Girls Best Friends"></Person>
+      <Person name="Roqunozzaman Emon" Profession="Every Girls Best Friends"></Person> */}
+
+      {
+        introductions.map(introduction => <Person name={introduction.name} Profession={introduction.Profession}></Person>)
+      }
 
 
 
